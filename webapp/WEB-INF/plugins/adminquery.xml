@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><plug-in>
     <name>adminquery</name>
     <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
-    <version>2.1.1</version>
+    <version>2.1.2</version>
     <description>adminquery.plugin.description</description>
     <provider>adminquery.plugin.provider</provider>
     <provider-url>http://lutece.paris.fr</provider-url>
@@ -12,10 +12,10 @@
 		<max-core-version/>	
 	</core-version-dependency>
 
-    <!-- Le plugin requiert-il un pool de connexions paramétrable : 1 - oui, 0 - non -->
+    <!-- Le plugin requiert-il un pool de connexions paramÃ©trable : 1 - oui, 0 - non -->
     <db-pool-required>1</db-pool-required>
 
-    <!-- Listes des fonctionnalitées d'administration éventuellement introduites par le plugin-->
+    <!-- Listes des fonctionnalitÃ©es d'administration Ã©ventuellement introduites par le plugin-->
     <admin-features>
         <admin-feature>
             <feature-id>ADMIN_QUERY_MANAGEMENT</feature-id>
