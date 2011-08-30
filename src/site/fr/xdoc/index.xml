@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
 	<properties>
-		<title>Plugin</title>
+		<title>Plugin adminquery</title>
 	</properties>
 	<body>
-		<section name="Plugin">
+		<section name="Plugin adminquery">
 			<subsection name="Introduction">
+				PhpMyAdmin like. Ce plugin n'est pas vraiment finalisé.
 			</subsection>
 		</section>
 	</body>
