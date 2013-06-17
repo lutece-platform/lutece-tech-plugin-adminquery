@@ -1,20 +1,22 @@
-
-<div class="content-box" >
-
-    <h2>#i18n{adminquery.manage_admin_query.pageTitle}</h2>
-
-    <div class="highlight-box">
-        <form method="post" >
-            <p>
-                <label for="request" >#i18n{adminquery.manage_admin_query.label}</label>
-                <@combo name="sql_request" default_value="0" items=sql_request_list/>
-                <input type="submit" class="button" value="#i18n{adminquery.manage_admin_query.buttonOk}" />
-            </p>
+<div class="row-fluid" >
+	<div class="span12">
+		<form class="form-horizontal" method="post" >
+			<fieldset>
+			<legend>#i18n{adminquery.manage_admin_query.pageTitle}</legend>
+			<div class="control-group">
+				<label class="control-label" for="request">#i18n{adminquery.manage_admin_query.label}</label>
+				<div class="controls">
+					<@combo name="sql_request" default_value="0" items=sql_request_list />
+				  </div>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary btn-small" >
+						<i class="icon-ok icon-white"></i>&nbsp;#i18n{adminquery.manage_admin_query.buttonOk}
+					</button>
+				</div>
+            </fieldset>
         </form>
-    </div>
-    
-    <div style="float:left;">
-        <table>
+        <table class="table table-condensed table-striped">
             <#if column_name?exists>
             <tr>
                 <#list column_name as column_name >
@@ -22,17 +24,13 @@
                 </#list>
             </tr>
             </#if>
-            
             <#if row_list?exists>
-            <#list row_list as row >
-            <tr>
-                ${row}
-            </tr>
-            </#list>
+				<#list row_list as row >
+				<tr>
+					${row}
+				</tr>
+				</#list>
             </#if>
-
         </table>
     </div>
-    
 </div>
-
