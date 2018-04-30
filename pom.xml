@@ -1,44 +1,39 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-	<parent>
-	  <artifactId>lutece-plugins-pom</artifactId>
-	  <groupId>fr.paris.lutece.plugins</groupId>
-	  <version>3.7</version>
-	</parent>
-
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>fr.paris.lutece.plugins</groupId>
-	<artifactId>plugin-adminquery</artifactId>
-	<packaging>lutece-plugin</packaging>
-	<version>2.1.2-SNAPSHOT</version>
-	<name>Lutece adminquery plugin</name>
-
-	<repositories>
-	  <repository>
-	    <id>lutece</id>
-	    <name>luteceRepository</name>
-	    <url>http://dev.lutece.paris.fr/maven_repository</url>
-	    <layout>default</layout>
-	  </repository>
-	</repositories>
-
-	<dependencies>
-		<dependency>
-	    <groupId>fr.paris.lutece</groupId>
-	    <artifactId>lutece-core</artifactId>
-	    <version>[2.3.0,)</version>
-	    <type>lutece-core</type>
-	  </dependency>
-	</dependencies>
-
+    <parent>
+        <artifactId>lutece-global-pom</artifactId>
+        <groupId>fr.paris.lutece.tools</groupId>
+        <version>3.0.12</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.paris.lutece.plugins</groupId>
+    <artifactId>plugin-adminquery</artifactId>
+    <packaging>lutece-plugin</packaging>
+    <version>2.1.2-SNAPSHOT</version>
+    <name>Lutece adminquery plugin</name>
+    <repositories>
+        <repository>
+            <id>lutece</id>
+            <name>luteceRepository</name>
+            <url>http://dev.lutece.paris.fr/maven_repository</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>fr.paris.lutece</groupId>
+            <artifactId>lutece-core</artifactId>
+            <version>[2.3.0,)</version>
+            <type>lutece-core</type>
+        </dependency>
+    </dependencies>
     <properties>
-		<componentName>adminquery</componentName>
-		<jiraProjectName>PLUGINADMINQUERY</jiraProjectName>
-		<jiraComponentId>10382</jiraComponentId>
-	</properties>
+        <componentName>adminquery</componentName>
+        <jiraProjectName>PLUGINADMINQUERY</jiraProjectName>
+        <jiraComponentId>10382</jiraComponentId>
+    </properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/technical/plugin-adminquery</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/technical/plugin-adminquery</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/technical/plugin-adminquery</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-tech-plugin-adminquery.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-tech-plugin-adminquery.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-tech-plugin-adminquery.git</url>
     </scm>
 </project>
